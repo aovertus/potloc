@@ -13,10 +13,8 @@ consumer.subscriptions.create("ShopChannel", {
   received(data) {
     var product = data.content;
     var row = $('#product_'+product.id+'');
-    console.log('Receiving product', product);
-    console.log('Receiving row', row == undefined);
-    if(row == undefined) {
-      $('table tr:last').after('<tr class='+product.class+' id='+product.id+'><td>'+product.store+'</td><td>'+product.model+'</td><td>'+product.quantity+'</td></tr>');
+    if(row.length == 0) {
+      $('table tr:last').after('<tr class='+product.class+' id=product_'+product.id+'><td>'+product.store+'</td><td>'+product.model+'</td><td class="quantity">'+product.quantity+'</td></tr>');
     } else {
       row.find('.quantity').text(product.quantity)
       row.removeClass()
