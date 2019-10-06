@@ -1,24 +1,15 @@
-# README
+Start the inventory with `websocketd --port=8090 ruby inventory.rb`
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://github.com/aovertus/shoe-store
 
-Things you may want to cover:
+-------------------------------------------------------------------
 
-* Ruby version
+Start the webserver with `rails s`
 
-* System dependencies
+https://github.com/aovertus/potloc
 
-* Configuration
+-------------------------------------------------------------------
 
-* Database creation
+Start the listener with `rake listener:start
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://github.com/aovertus/potloc

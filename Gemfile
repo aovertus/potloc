@@ -55,3 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faye-websocket'
 gem 'eventmachine'
 gem 'pg'
+gem 'redis'

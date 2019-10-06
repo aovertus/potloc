@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+.normal-inventory{
+  background-color: orange;
+}
+
+.low-inventory{
+  background-color: red;
+}
+
+.high-inventory{
+  background-color: green
+}
