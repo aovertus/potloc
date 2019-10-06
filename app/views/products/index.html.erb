@@ -1,0 +1,19 @@
+<% @store_products.each do |store, products| %>
+  <h1><%= store %></h1>
+  <table>
+    <thead>
+      <tr>
+        <th> Model </th>
+        <th> Quantity </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% products.each do |product| %>
+        <tr>
+          <td> <%= product.model %> </td>
+          <td> <%= product.quantity %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
